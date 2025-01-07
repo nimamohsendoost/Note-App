@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .newNote {
+    @apply p-10 space-y-6 lg:col-span-5 sm:col-span-full;
+  }
+  .newNoteTitle {
+    @apply font-extrabold text-3xl text-gray-700;
+  }
+  .newNoteBtn {
+    @apply w-full text-white bg-blue-600 text-center h-14 rounded-md font-semibold text-xl;
+  }
+  .addNoteInput {
+    @apply w-full py-2 px-4 rounded-md h-14 placeholder:text-gray-600 placeholder:opacity-55 font-medium focus:outline-blue-700;
+  }
+  .noteHeader {
+    @apply grid space-y-6 col-span-full lg:flex lg:space-y-0  justify-around border-b-[1.7px] border-b-gray-600 pb-8;
+  }
+  .noteHeaderTitle {
+    @apply font-extrabold text-4xl text-gray-700;
+  }
+  .sm-noteHeader {
+    @apply;
+  }
+  .sortNoteInput {
+    @apply pl-2 py-1 rounded-md outline-gray-700 border-2  border-gray-600 font-semibold;
+  }
+  .noteStatusCounter {
+    @apply text-white opacity-55 bg-gray-600 rounded-full py-0.5 px-1;
+  }
+  .noteStatusTitle {
+    @apply font-semibold text-base opacity-55 text-gray-600;
+  }
+  .noteStatusNoNotes {
+    @apply font-extrabold text-2xl text-gray-700;
+  }
+  .noteList {
+    @apply my-5 rounded-lg bg-white w-full;
+  }
+  .noteListBody {
+    @apply grid h-3/4 text-start p-6 space-y-2 ;
+  }
+  .noteListBodyTop {
+    @apply flex justify-between;
+  }
+  .noteListBodyTitle {
+    @apply text-3xl text-gray-700 font-bold break-normal;
+  }
+  .noteListCloseCheckbox {
+    @apply flex items-center sm:justify-center lg:justify-between space-x-3;
+  }
+  .noteListBodyDescription {
+    @apply text-gray-500 font-normal text-opacity-80 text-xl break-normal overflow-auto;
+  }
+  .noteListCheckbox {
+    @apply w-6 h-6;
+  }
+  .noteListDate {
+    @apply h-1/4 py-3 mx-6 border-t-2 border-opacity-85 text-gray-300 font-semibold;
+  }
+}
